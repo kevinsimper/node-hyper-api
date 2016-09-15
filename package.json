@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "npm run compile && npm test",
-    "test": "node test",
+    "test": "npm run compile && node test",
     "compile": "babel --presets es2015 --plugins add-module-exports lib/ -d dist"
   },
   "keywords": [
